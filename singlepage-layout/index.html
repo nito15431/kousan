@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>シングルページレイアウト</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="./js/jquery-1.12.0.min.js" type="text/javascript"></script>
+  <script src="./js/jquery.onepage-scroll.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="main">
+<section>
+<header class="header">
+	<p class="site-title-sub">Web designer's portfolio</p>
+	<h1 class="site-title">童心を忘れない大人</h1>
+	<p class="discription">Check out some of my works.</p>
+	<div class="ghostbuttons">
+	<a class="button"href="#about">LEARN MORE</a>
+	<a class="button button-showy"href="#contact">SEND MESSAGE</a>
+	</div>
+</header>
+</section>
+
+<section id="about"class="about">
+	<h2 class="heading">ABOUT ME</h2>
+	<p class="about-text">
+	はじめまして。WEBディレクターを目指して現在就職活動中です。<br>
+	新潟の職業訓練でWEBの基礎を学び、現在埼玉でよりWEBの知識を深めるために勉強しております。
+	</p>
+	<p class="about-text">
+		このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルをもとに作られた架空のデザイナーポートフォリオです。<br>
+		このサンプルのようなサイトをいちから作る過程を通してHTMLとCSSの実践的なコーディングノウハウを学んでいます。
+
+	</p>
+</section>
+<section class="works">
+	<h2 class="heading">WORKS</h2>
+	<div class="work-wrapper">
+	<div class="work-box tree">
+		<img src="./images/tree.jpg" alt="制作事例1" class="work-image">
+		<div class="work-description">
+		<div class="work-description-inner">
+		<p class="work-text">一つ目の事例が入ります<br>
+		説明が入ります<br>
+		仕様ツール:xxx,xxx,xxx;
+		<a href="#" class="button">READ MORE</a>
+		</p>
+		</div>
+		</div>
+	</div>
+	<div class="work-box building">
+		<img src="./images/building.jpg" alt="制作事例2" class="work-image">
+		<div class="work-description">
+		<div class="work-description-inner">
+		<p class="work-text">二つ目の事例が入ります<br>
+		説明が入ります<br>
+		使用ツールxxx,xxxx,xxx
+		<a href="#top" class="button">READ MORE</a>
+		</p>
+		</div>
+		</div>
+	</div>
+	<div class="work-box lake">
+		<img src="./images/lake.jpg" alt="制作事例3" class="work-image">
+		<div class="work-description">
+		<div class="work-description-inner">
+		<p class="work-text">
+			三つ目の事例が入ります<br>
+		説明が入ります<br>
+		使用ツールxxx,xxxx,xxx
+		<a href="#" class="button">READ MORE</a>
+		</p>
+		</div>
+		</div>
+	</div>
+	<div class="work-box sky">
+		<img src="./images/sky.jpg" alt="制作事例4" class="work-image">
+		<div class="work-description">
+		<div class="work-description-inner">
+		<p class="work-text">四つ目の事例が入ります<br>
+		説明が入ります<br>
+		使用ツールxxx,xxxx,xxx
+		<a href="#" class="button">READ MORE</a>
+		</p>
+		</div>
+		</div>
+	</div>
+	</div>
+</section>
+<section class="skills">
+<h2 class="heading">MY SKILLS</h2>
+<div class="skills-wrapper">
+	<div class="skill-box">
+	<i class="fa fa-compass fa-5x skill-icon"></i>
+		<div class="skill-title">IDEA</div>
+		<p class="skill-text">何かを考えることが好きです。<br>
+		新しいことを思いついては試しています。<br>
+		ディレクション経験もあります。</p>
+	</div>
+	<div class="skill-box">
+		<i class="skill-icon fa-5x fa fa-file-image-o"></i>
+		<div class="skill-title">DESIGN</div>
+		
+		<p class="skill-text">
+			見た目の綺麗さだけでなく<br>
+			使いやすさ情報の伝わりやすさなど、<br>
+			その先まで考えることを意識しています。
+		</p>
+	</div>
+	<div class="skill-box">
+	<i class="skill-icon fa-5x fa fa-file-code-o"></i>
+		<div class="skill-title">CODING</div>
+
+		<p class="skill-text">
+			HTML/CSSコーディングも行います<br>
+			正しく美しいマークアップと<br>
+			今後の変更への強さを考慮しています。
+		</p>
+	</div>
+</div>
+</section>
+<section id="contact"class="contact">
+	<form class="contact-form">
+		<input type="text" name="name" placeholder="NAME">
+		<textarea name="message" placeholder="MESSAGE"></textarea>
+		<input type="submit" value="SEND">
+	</form>
+</section>
+<section class="footer"></section>
+<script src="lib/placeholders.min.js"></script>
+<!--
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".main").onepage_scroll({
+			sectionContainer:"section",
+			easing:"cubic-bezier(0.175, 0.885, 0.420, 1.310)",
+			animationTime:800,
+			pagination:true,
+			updateURL:false,
+			loop:false,
+			keyboard:true,
+			responsiveFallback:false,
+			direction:"vertical"
+		});
+	});
+</script>
+  -->
+</div>
+
+</body>
+</html>	
